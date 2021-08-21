@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #e6e6e6;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.mainContents {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  margin-right: 320px;
+  /* z-index: 10; */
+  /* overflow-y: auto; */
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* height: 80px; */
+  text-align: center;
+  /* align-items: center; */
+  /* background: #ffa877; */
+  z-index: 10;
+  padding-right: 320px;
+}
+
+.header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  /* max-width: 1400px; */
+  padding: 0 40px;
+  background-color: #ffffff;
+}
+
+.global_nav_main {
+  display: flex;
+  margin: 0 0 0 auto;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+.global_nav_main > ul >li {
+  margin: 0 0 0 15px;
+  font-size: 14px;
+}
+
+.global_nav_main > ul > li > a{
+  display: flex;
+  text-decoration: none;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: #31495a;
+  font-weight: 600;
+}
+
+.contact_button {
+  color: #007bbf;
+  border: solid 1px #007bbf;
+  padding: 10px 20px;
+}
+
+.global_nav_contact > ul > li > a{
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #31495a;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-left: 20px;
+  line-height: 1;
+}
+
+.key_visual {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* object-fit:contain; */
+  /* background: #bdf0e4; */
+}
+
+.key_visual_text{
+  position: absolute;
+  top: 33.4%;
+  left: 13.3%;
+  z-index: 2;
+  width: 26.6%;
+}
+
+.key_visual_text > h2 {
+  clear: both;
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: 600;
+}
+
+.key_visual_img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* object-fit:contain; */
+  /* background: #bdf0e4; */
+}
+
+.main_message{
+  position: fixed;
+}
+
+.sidebar {
+  display: block;
+  /* position: sticky; */
+  position: fixed;
+  /* flex: 1; */
+  position: -webkit-sticky;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffcbcc;
+  width: 320px;
+  text-align: center;
+  overflow-y: auto;
+  font-size: 40px;
+  z-index: 10;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.key_visual_img > picture > img{
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
