@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
-  <script type="text/javascript" src="js/scroll.js"></script>
+  <script type="text/javascript" src="js/textform_add.js"></script>
   <title>100万円からはじめられるテレビCMサービス | テレシー(TELECY)</title>
 </head>
 <body>
@@ -58,31 +58,79 @@
 
     </div>
     <div class="sidebar">
-      <nav>
-          <ul>
-              <li><a href="">sidebar1</a></li>
-              <li><a href="">sidebar2</a></li>
-              <li><a href="">sidebar3</a></li>
-              <li><a href="">sidebar4</a></li>
-              <li><a href="">sidebar5</a></li>
-              <li><a href="">sidebar6</a></li>
-              <li><a href="">sidebar7</a></li>
-              <li><a href="">sidebar1</a></li>
-              <li><a href="">sidebar2</a></li>
-              <li><a href="">sidebar3</a></li>
-              <li><a href="">sidebar4</a></li>
-              <li><a href="">sidebar5</a></li>
-              <li><a href="">sidebar6</a></li>
-              <li><a href="">sidebar7</a></li>
-              <li><a href="">sidebar1</a></li>
-              <li><a href="">sidebar2</a></li>
-              <li><a href="">sidebar3</a></li>
-              <li><a href="">sidebar4</a></li>
-              <li><a href="">sidebar5</a></li>
-              <li><a href="">sidebar6</a></li>
-              <li><a href="">sidebar7</a></li>
-          </ul>
-      </nav>
+      <div class="sidebar_inner">
+        <h3 class="sidebar_title">
+          テレシーのサービス資料<br>
+          ダウンロードはこちら
+        </h3>
+        <form action="" method="POST">
+          <dl class="sidebar_form">
+            <div class="sidebar_name">
+              <dd>
+                <input id="sidebar_form_Lastname" type="text" name="LastName" placeholder="姓" size="60" maxlength="80">
+              </dd>
+              <dd>
+                <input id="sidebar_form_Firstname" type="text" name="FirstName" placeholder="名" size="60" maxlength="80">
+              </dd>
+            </div>
+            <dd>
+              <input id="sidebar_form_mail" class="sidebar_form_another" type="text" name="mail" placeholder="メールアドレス" size="60" maxlength="80">
+            </dd>
+            <dd>
+              <input id="sidebar_form_company" class="sidebar_form_another" type="text" name="company" placeholder="企業名" size="60" maxlength="80">
+            </dd>
+            <dd>
+              <input id="sidebar_form_tel" class="sidebar_form_another" type="text" name="tel" placeholder="電話番号" size="60" maxlength="80">
+            </dd>
+            <dd>
+              <select name="your_company" id="sidebar_form_your_company" class="sidebar_form_drop">
+                <option value="#">貴社について</option>
+                <option value="#">広告主</option>
+                <option value="#">広告代理店</option>
+                <option value="#">制作会社関連</option>
+                <option value="#">メディア関連</option>
+              </select>
+            </dd>
+            <dd>
+              <select name="about_telecy" id="about_telecy" class="sidebar_form_drop" onchange="textform_add();">
+                <option value="1" selected>テレシーを何で知りましたか？</option>
+                <option value="2">テレビCM</option>
+                <option value="3">タクシーCM</option>
+                <option value="4">エレベーターCM</option>
+                <option value="5">インターネット上の検索結果</option>
+                <option value="6">インターネット上の広告</option>
+                <option value="7">SNS（Facebook、Twitterなど）</option>
+                <option value="8">イベント</option>
+                <option value="9">ニュース記事</option>
+                <option value="10">知人の紹介</option>
+                <option value="11">その他</option>
+              </select>
+            </dd>
+            <dd>
+              <input id="text_reason" class="sidebar_form_text" type="text" name="reason" placeholder="その他の理由" size="60">
+            </dd>
+          </dl>
+          <div class="sidebar_form_policy">
+            <P>
+              <a href="#" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+              に同意いただいた上<br>
+              でお問い合わせください。
+            </P>
+            <p>
+              <label for="#">
+                <input type="checkbox" name="policy[data][]" value="ご提供いただく個人情報のお取り扱いに同意する">
+                <span class="sidebar_form_checkbox_text">ご提供いただく個人情報のお取り扱いに同意する</span>
+              </label>
+            </p>
+          </div>
+          <div class="sidebar_form_submit">
+            <!-- <input type="submit" name="#" value="ダウンロード" class="button"> -->
+            <button type="button" name="#" class="sidebar_form_button">ダウンロード</button>
+          </div>
+          <a href="#" class="sidebar_form_link">お問い合わせはこちら</a>
+        </form>
+      </div>
+
     </div>
   </div>
 

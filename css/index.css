@@ -1,8 +1,10 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #e6e6e6;
+  color: #31495a;
+  font: 16px/1.75 "Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体",Meiryo,sans-serif;
+  font-weight: 300;
+  text-align: center;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
 }
 
 .wrapper {
@@ -132,7 +134,7 @@ ul {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #ffcbcc;
+  background: #f5f5f5;
   width: 320px;
   text-align: center;
   overflow-y: auto;
@@ -140,14 +142,158 @@ ul {
   z-index: 10;
 }
 
-.sidebar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.sidebar_inner{
+  padding: 20px;
+  height: 100%;
+  width: 100%;
 }
 
-.key_visual_img > picture > img{
+.sidebar_title {
+  color: #0a9ae5;
+  line-height: 1.33;
+  font-size: 18px;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.sidebar_title::before{
+  content: "";
+  display: block;
+  width: 55px;
+  height: 45px;
+  margin: 0 auto 12px;
+  background: url(../img/icon/ico-sidebar.svg) no-repeat center/contain;
+}
+
+.sidebar_form{
+  display: block;
+}
+
+.sidebar_name{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+#sidebar_form_Lastname{
+  display: flex;
+  width: 95%;
+  padding: 9px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline:none;
+}
+
+#sidebar_form_Firstname{
+  display: flex;
+  width: 95%;
+  margin-left: auto;
+  padding: 9px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline:none;
+}
+
+.sidebar_form_another{
+  display: flex;
+  width: 100%;
+  padding: 9px 18px;
+  margin-top: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline:none;
+}
+
+.sidebar_form_text{
+  display: flex;
+  width: 100%;
+  padding: 9px 18px;
+  margin-top: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline:none;
+}
+
+.sidebar_form_drop{
+  display: flex;
+  width: 100%;
+  padding: 9px 18px 9px 14px;
+  margin-top: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline:none;
+}
+
+.sidebar_form_policy{
+  font-size: 12px;
+  padding: 0 24px;
+}
+
+.sidebar_form_policy > p{
+  margin-top: 32px;
+}
+
+.sidebar_form_checkbox_text{
+  text-align: left;
+}
+
+/* .sidebar_form_submit{
+  width: 100%;
+  padding: 22px 0;
+  border-radius: 12px;
+  background-color: #0a9ae5;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+} */
+
+.sidebar_form_button{
+  width: 100%;
+  padding: 22px 0;
+  border-radius: 12px;
+  background-color: #0a9ae5;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar_form_button:hover{
+  background-color: #fff;
+  color: #0a9ae5;
+  border-color: #0a9ae5;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.sidebar_form_link{
+  color: #0a9ae5;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+img{
   width: 100%;
   object-fit: cover;
   height: auto;
 }
+
+::placeholder {
+  color: #bbb;
+}
+
+/* .key_visual_img > picture > img{
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+} */
